@@ -1,0 +1,9 @@
+
+$(document).ready(function(){ /*Ejecutamos al cargar página.*/
+  $(".p1").hover(function(){ /*Activamos función al pasar el puntero, se ejecuta cada vez que pasamos el putero.*/
+      arriba =  Math.random() * (400 - 1) + 1; /*Generamos un numero aleatorio para top*/
+      abajo =  Math.random() * (609 - 1) + 1; /*Generamos un numero aleatorio para left*/
+    $(this).css("top", arriba); /*Cambiamos valor de top*/
+    $(this).css("left", abajo); /*Cambiamos valor de left*/
+    });
+});
